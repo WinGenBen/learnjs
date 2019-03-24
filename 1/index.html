@@ -2,9 +2,17 @@
 	<head>
 	</head>
 	<body>
-	
+		<div id="raduga">
+			raduga
+		</div>
 	</body>
 	<script>
-		setTimeout(function() { alert("Test"); }, 2000);
+	 r = document.getElementById("raduga");
+
+			setTimeout(function () { r.style.color = "red"; }, 2000);
+			setTimeout(function () { r.style.color = "orange"; }, 4000);
+			setTimeout(function () { r.style.color = "yellow"; }, 6000);
+			setTimeout(function () { r.style.color = "blue"; }, 8000);
+			setTimeout(function () { r.style.color = "violet"; }, 10000);
 	</script>
 </html>
