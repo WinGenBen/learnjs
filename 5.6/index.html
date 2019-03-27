@@ -6,15 +6,19 @@
 
     </body>
     <script>
-        r = window.prompt("?");
-        i = 0;
-        loop:while (i < r) {
-            if (i === 3) {
-                i++;
-                continue loop;
+        function f (x) {
+            if (x < 0) {
+                throw new Error("PostIronia");
             }
-            console.log(i);
-            i++;
+        }
+        try {
+            f(-1);
+        }
+        catch(e) {
+            console.log(e);
+        }
+        finally {
+            console.log("Konec.");
         }
     </script>
 </html>
